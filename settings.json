@@ -1,0 +1,22 @@
+{
+  "workbench.colorTheme": "Abyss",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.tabSize": 2,
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.semi": true,
+  "prettier.singleQuote": false,
+  "prettier.arrowParens": "always",
+  "prettier.endOfLine": "lf",
+  "prettier.bracketSameLine": false,
+  "prettier.bracketSpacing": true,
+  "prettier.ignorePath": ".prettierignore",
+  "prettier.jsxSingleQuote": false,
+  "prettier.trailingComma": "none",
+  "prettier.htmlWhitespaceSensitivity": "css",
+  "prettier.singleAttributePerLine": false
+}
