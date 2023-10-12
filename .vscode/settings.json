@@ -1,20 +1,45 @@
 {
   "editor.tabSize": 2,
   "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
   },
-  "prettier.printWidth": 80,
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": false,
-  "prettier.semi": true,
-  "prettier.singleQuote": false,
-  "prettier.arrowParens": "always",
-  "prettier.endOfLine": "lf",
-  "prettier.bracketSameLine": false,
-  "prettier.bracketSpacing": true,
-  "prettier.ignorePath": ".prettierignore",
-  "prettier.jsxSingleQuote": false,
-  "prettier.trailingComma": "none",
-  "prettier.htmlWhitespaceSensitivity": "css",
-  "prettier.singleAttributePerLine": false
+  "eslint.enable": true, // Activer/désactiver ESLint pour le dossier de travail. Activé par défaut.
+  "eslint.format.enable": false, // Activer ESLint en tant que formateur pour les fichiers validés.
+  "eslint.debug": false, // Activer le mode de débogage ESLint.
+  "eslint.lintTask.enable": true,
+  "eslint.lintTask.options": "", // Options de ligne de commande appliquées lors de l'exécution de la tâche de linting.
+  "eslint.options": {}, // Options pour configurer le fonctionnement d'ESLint.
+  "eslint.useESLintClass": false, // Utiliser l'API de classe ESLint, même si l'API CLIEngine est présente.
+  "eslint.run": "onType", // Exécuter le linter onSave ou onType. Valeurs possibles : "onType", "onSave", "onType - onSave".
+  "eslint.quiet": false, // Ignorer les avertissements.
+  "eslint.runtime": null, // Chemin de l'environnement d'exécution Node.js pour exécuter ESLint.
+  "eslint.validate": [  // Langages pour lesquels la validation doit être appliquée
+    "javascript",
+  ],
+  "editor.codeActionsOnSave": { // Paramètres pour les actions de code à la sauvegarde.
+    "source.fixAll.eslint": true
+  },
+  "eslint.execArgv": [], // Passer des arguments supplémentaires à l'environnement d'exécution Node.js.
+  "eslint.nodeEnv": "", // Définir la variable d'environnement NODE_ENV.
+  "eslint.nodePath": "", // Chemin d'installation d'un package ESLint s'il n'est pas détecté automatiquement.
+  "eslint.probe": [], // Langages pour lesquels l'extension ESLint devrait essayer de valider le fichier.
+  "eslint.workingDirectories": [], // Spécifier comment sont calculés les répertoires de travail d'ESLint.
+  "eslint.codeAction.disableRuleComment": { "enable": true, "location": "separateLine" }, // Désactiver la règle de linting dans le menu de correction rapide.
+  "eslint.codeAction.showDocumentation": { "enable": true }, // Afficher la page de documentation de la règle dans le menu de correction rapide.
+  "eslint.codeActionsOnSave.mode": "all", // Contrôle des problèmes corrigés lors de l'exécution des actions de code à la sauvegarde.
+  "eslint.codeActionsOnSave.rules": [], // Contrôle des règles prises en compte lors de l'exécution des actions de code à la sauvegarde.
+  "eslint.rules.customizations": [], // Personnaliser les niveaux de gravité des règles ESLint.
+  "eslint.onIgnoredFiles": "off", // Contrôle de la génération de warnings lors de la tentative de linting de fichiers ignorés.
+  "eslint.problems.shortenToSingleLine": false, // Réduire les problèmes sous forme de texte sur une seule ligne.
+  "eslint.experimental.useFlatConfig": false, // Activer le support de la configuration Flat (eslint.config.js).
+  "eslint.timeBudget.onValidation": {  // Budget temps pour la validation avant l'affichage d'un avertissement ou d'une erreur.
+    "warning": 2000, // Durée en millisecondes pour l'avertissement
+    "error": 5000 // Durée en millisecondes pour l'erreur
+  },
+  "eslint.timeBudget.onFixes": {
+    "warning": 8000, // Durée en millisecondes pour l'avertissement
+    "error": 10000 // Durée en millisecondes pour l'erreur
+  } 
 }
+
