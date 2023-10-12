@@ -1,6 +1,4 @@
 {
-  "workbench.colorTheme": "Abyss",
-  "security.workspace.trust.untrustedFiles": "open",
   "editor.tabSize": 2,
   "[javascript]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"

@@ -1,0 +1,7 @@
+{
+  "burger": {
+    "scope": "javascript",
+    "prefix": "console",
+    "body": "console.log('That\'s a tasty burger');"
+  }
+}
